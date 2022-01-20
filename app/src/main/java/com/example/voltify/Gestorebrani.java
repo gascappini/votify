@@ -15,16 +15,18 @@ public class Gestorebrani {
 
     }
 
-    public void addBrano(String titolo, String genere){
-        Brano b = new Brano(titolo, genere);
+    public void addBrano(String titolo, int durata, String autore, String genere, String datacreazione){
+        Brano b = new Brano(titolo, durata, autore, genere, datacreazione);
         listaBrani.add(b);
+        System.out.println(listaBrani);
     }
 
 
-    public void listaBrani(){
+    public StringBuilder listaBrani(){
         StringBuilder stBui = new StringBuilder();
         for (Brano brV : listaBrani){
             stBui.append(brV.toString());
         }
+        return stBui;
     }
 }
