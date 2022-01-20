@@ -6,9 +6,13 @@ public class Brano {
     private String titolo;
     private int durata;
     private String autore;
+    private String genere;
     private Date datacreazione;
 
-    public Brano(String titolo){this.titolo=titolo;}
+    public Brano(String titolo, String genere){
+        this.titolo=titolo;
+        this.genere=genere;
+    }
 
 
     public String Brano(){
@@ -17,7 +21,8 @@ public class Brano {
         }
     }
 
-    public void setTitolo(String Titolo){
+    public void setTitolo(String titolo){
+
         this.titolo = titolo;
     }
 }
